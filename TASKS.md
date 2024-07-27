@@ -66,6 +66,7 @@ You got it to work! Nice, now the basic functionality is back for the zookeepers
 Add your solution below, either as an inline text or link to new documentation file(s) you've created.
 
 // Your solution
+[README](README.md)
 
 ### Task 4: Test fixing
 
