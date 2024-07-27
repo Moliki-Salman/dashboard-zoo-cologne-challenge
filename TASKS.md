@@ -36,9 +36,8 @@ Please take stock fo the page using developer tools, your instincts, ... and wri
 
 // Your solution
 
--   First, I ran pnpm run dev to start the start the app. Then the dashboard displaced a 500 error alert is not defined. It also indicates the error occcured  occurs in the setup function of the app.js file at line 42, column 23. " _sfc_main.setup (./app.js#cjs:42:23)".
-
-- Afterwards, I checked the package.json to get an insight of the project's configuration, scripts and dependencies.
+-   First, I ran pnpm run dev to start the start the app. Then the dashboard displaced a 500 error stating that alert is not defined. It also states that the error occcured  in the setup function of the app.js file at line 42, column 23. " _sfc_main.setup (./app.js#cjs:42:23)". However, I discovered that it is rather an app.vue file.
+- Afterwards, I checked the package.json to get an insight of the project's configuration, scripts and  dependencies.
 -   I ran npm run test to check if there are no errors or bugs in the project.
     -   The result of the test run shows one failed test that indicates that the utils/useCalculateAgeInYears.ts function does not round up the result.
     -   Also, the dashboard displaced "upgrade required".
@@ -48,12 +47,17 @@ Please take stock fo the page using developer tools, your instincts, ... and wri
 
 Now that we know that is broken, let's try to get things running again, step by step. First we should aim to just get the project to start. Please fix the problem that stops `pnpm run dev` from working out. Then:
 
--   document the loaded page with a brief description,h
+-   document the loaded page with a brief description,
 -   document the problems that needed to be resolved to make it work (so that we can avoid and quicker fix them in the future!)
 
 Zookeepers reported that the error sometimes changes when reloading the page after the initial start.
 
 // Your solution
+- The error: "alert is not defined" occured because of the alert function on line 4 of the app.vue file. The error was  resolved by deleting the alert function.
+- After restarting the server, the dashboard displaces the page content but the console indicates an error.
+- Fixed console error by correcting the typo error  [ ANlMALS => ANIMALS ] on line 5 in /server/api/animals.get.ts
+
+
 
 ### Task 3: Start the documentation
 
