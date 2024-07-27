@@ -38,7 +38,7 @@ Please take stock fo the page using developer tools, your instincts, ... and wri
 
 -   First, I ran pnpm run dev to start the start the app. Then the dashboard displaced a 500 error stating that alert is not defined. It also states that the error occcured  in the setup function of the app.js file at line 42, column 23. " _sfc_main.setup (./app.js#cjs:42:23)". However, I discovered that it is rather an app.vue file.
 - Afterwards, I checked the package.json to get an insight of the project's configuration, scripts and  dependencies.
--   I ran npm run test to check if there are no errors or bugs in the project.
+-   I ran pnpm run test to check if there are no errors or bugs in the project.
     -   The result of the test run shows one failed test that indicates that the utils/useCalculateAgeInYears.ts function does not round up the result.
     -   Also, the dashboard displaced "upgrade required".
 - Also, the project is yet to have a README.md file.
