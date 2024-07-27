@@ -31,7 +31,7 @@ pnpm run dev
 
 The app will start ruuning on localhost:3000.
 
-## Cancel App running
+## Cancel running App
 
 Navigate to the CLI and run this command to stop the app from running
 
