@@ -66,7 +66,8 @@ You got it to work! Nice, now the basic functionality is back for the zookeepers
 Add your solution below, either as an inline text or link to new documentation file(s) you've created.
 
 // Your solution
-[README](README.md)
+
+-Here is my [README](README.md)
 
 ### Task 4: Test fixing
 
@@ -91,7 +92,7 @@ Please fix the two above problems and outline what was necessarry to do so.
     - Included the header line <th>Name</th> to line 21 in ```/components/TheAnimalTable.vue```.
     - Included the name property in the v-for loop of the array in line 28.
     - Included  the result from the loop <td>{{ name }}</td> in line 31.
-- For the sorting, I modified the sort() function to sort by name instead of by weight.
+- For the sorting, I modified the sort() function to sort by name instead of by weight. Also, the predicate function returns 1 if the first parameter comes earlier alphabetically, and -1 if not
 - Finally, I imported the calculateAgeInYears() function  from utils  and then called it with the birthdate argument to ensure the Age entry is displayed correctly.
 
 ### Task 6: UI Feature 1
@@ -99,6 +100,12 @@ Please fix the two above problems and outline what was necessarry to do so.
 The zookeepers want to be able to see all details of an animal. Please create such a view that allows them to do so, outline anything about your process while adding the view below. The zookeepers didn't have time for more information, sorry. They'll surely be glad to criticize the first version intensly though and will want to know why you went for the approach you chose.
 
 // Your solution
+- I found the description of animals in ```types.ts```.
+- The table initially contained 6 properties, so i added the missing once.
+    - Added two new table headers to match the animal descriptions: (height(m) and favouriteFruit).
+    - Added two new table cells to display the missing properties.
+    - Added the values that were left out of the table into the v-for loop so that the data can appear.
+    - Added the hover functunality, borders and colors.
 
 ### Task 7: Logic Feature
 
