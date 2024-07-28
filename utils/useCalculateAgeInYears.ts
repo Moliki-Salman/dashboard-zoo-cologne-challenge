@@ -5,6 +5,7 @@ export default (birthdate: Date) => {
     differenceInMilliseconds / (1000 * 60 * 60 * 24 * 365)
   );
 
+  //handle  the case where the difference could be 0
   if (ageDifference === 0) {
     return 1;
   }

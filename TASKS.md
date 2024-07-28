@@ -73,7 +73,7 @@ Add your solution below, either as an inline text or link to new documentation f
 There's a failing test that for the age calculation helper. Can you figure out what is broken in the implementation or the test it is and resolve the problem? All zookeepers are really interested in what is going on here.
 
 // Your solution
-- The test specifies today as the birthdate, so the difference in calculating the age in years will result to 0 which would not be converted to 1 by the  Math.round() method. I resolved this issue with an if statement in[useCalculateAgeInYears](./utils/useCalculateAgeInYears.ts)
+- The test specifies today as the birthdate, so the difference in calculating the age in years will result to 0 which would not be converted to 1 by the  Math.round() method. I resolved this issue with an if statement in  ```/utils/useCalculateAgeInYears.ts```
 
 ### Task 5: UI Fixing and Improvement
 
@@ -87,6 +87,12 @@ The zookeepers report that the table is incomplete and different than usually. M
 Please fix the two above problems and outline what was necessarry to do so.
 
 // Your solution
+- For the missing `Name` column, I did 3 modification, they are:
+    - Included the header line <th>Name</th> to line 21 in ```/components/TheAnimalTable.vue```.
+    - Included the name property in the v-for loop of the array in line 28.
+    - Included  the result from the loop <td>{{ name }}</td> in line 31.
+- For the sorting, I modified the sort() function to sort by name instead of by weight.
+- Finally, I imported the calculateAgeInYears() function  from utils  and then called it with the birthdate argument to ensure the Age entry is displayed correctly.
 
 ### Task 6: UI Feature 1
 
